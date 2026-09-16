@@ -1,0 +1,13 @@
+{
+  "name": "website-faza",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portofolio Faza Sadikin",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
