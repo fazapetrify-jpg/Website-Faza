@@ -34,9 +34,10 @@
     @media(max-width:800px){.navlinks{display:none}.hero{grid-template-columns:1fr;min-height:83vh;padding-top:6rem}.hero:before{width:70vw;height:70vw;right:-40vw}.intro{max-width:100%}.section-head,.about-grid{grid-template-columns:1fr}.projects{display:block}.project{margin-bottom:1rem;min-height:23rem}.process{grid-template-columns:1fr}.process article{min-height:auto}.fact{grid-template-columns:1fr;gap:.25rem}.footer-row{display:block}.footer-row span{display:block;margin:.4rem 0}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.marquee-track,.bar{animation:none}.reveal{opacity:1;transform:none}.project{transition:none}}
     .social-links{display:flex;flex-wrap:wrap;gap:.65rem 1.2rem;margin:1.5rem 0;font-size:.9rem}.social-links a{padding:.5rem 0;border-bottom:1px solid var(--line)}.social-links a:hover{color:var(--acid)}
+    .release{padding-top:clamp(4rem,8vw,7rem);padding-bottom:clamp(4rem,8vw,7rem);border-bottom:1px solid var(--line)}.release-layout{display:grid;grid-template-columns:.72fr 1.28fr;gap:clamp(2rem,7vw,7rem);align-items:start}.release-copy{position:sticky;top:6rem}.release h2{font:400 clamp(4rem,9vw,8rem)/.82 "Instrument Serif",serif;letter-spacing:-.045em;margin:1.5rem 0}.release h2 em{color:var(--acid);font-weight:400}.release-copy>p{max-width:30rem;color:var(--muted);font-size:1.05rem}.release-meta{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem}.release-meta span{border:1px solid #35383d;border-radius:999px;padding:.4rem .7rem;color:#c8c9c5;font-size:.8rem}.players{display:grid;gap:1rem}.player-card{background:var(--paper);border:1px solid var(--line);padding:1rem}.player-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:.9rem}.player-head strong{font-size:.9rem}.player-head a{color:var(--acid);font-size:.82rem}.video-frame{aspect-ratio:16/9;width:100%;border:0;display:block}.spotify-frame{width:100%;height:152px;border:0;display:block;border-radius:12px}
     .scoring-feature{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:clamp(1.5rem,4vw,3rem);margin-bottom:1rem;border:1px solid var(--acid);background:#151a10}.scoring-feature h3{font:400 clamp(3rem,7vw,5rem)/1 "Instrument Serif",serif;margin:1rem 0}.scoring-feature p{color:var(--muted);margin:0}.work-link{display:inline-block;padding:1rem 1.3rem;background:var(--acid);color:#101113;border-radius:3px;font-weight:600;flex-shrink:0}.work-link:hover{background:var(--ink)}a:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
     .experience-list{margin-top:4rem}.experience-list>h3{font:400 2.5rem/1.1 "Instrument Serif",serif}.experience-list article{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(2rem,8vw,8rem);padding:1.5rem 0;border-top:1px solid #bfc0ba}.experience-list article>span{color:#5e615d;font-size:.9rem}.experience-list h4{margin:0 0 .5rem;font-size:1.1rem}.experience-list p{margin:0;color:#454843;max-width:48rem}
-    @media(max-width:800px){.scoring-feature{align-items:flex-start;flex-direction:column}.experience-list article{grid-template-columns:1fr;gap:.5rem}}
+    @media(max-width:800px){.scoring-feature{align-items:flex-start;flex-direction:column}.experience-list article{grid-template-columns:1fr;gap:.5rem}.release-layout{grid-template-columns:1fr}.release-copy{position:static}.release h2{font-size:clamp(4rem,20vw,6.5rem)}}
     .cv-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem}.cv-grid article{border-top:1px solid var(--line);padding-top:1.5rem}.cv-grid h3{font-size:1.3rem;margin:.5rem 0 1rem}.cv-grid h4{font-size:1rem;margin:1.5rem 0 .5rem}.cv-grid p,.cv-grid li{color:var(--muted)}.cv-grid ul{padding-left:1.2rem}.cv-grid li{margin:.5rem 0}.email-link{color:var(--acid);overflow-wrap:anywhere}.other-project{border-bottom:1px solid var(--line);margin-top:1.5rem;padding:1.5rem 0}.other-project summary{cursor:pointer;font-size:1.2rem}.other-project summary span{font-size:.9rem;color:var(--muted);margin-left:1rem}.other-project p{max-width:48rem;color:var(--muted)}#other-projects{padding-top:2rem;padding-bottom:2rem}@media(max-width:800px){.cv-grid{grid-template-columns:1fr}.other-project summary span{display:block;margin-left:0}}
   </style>
 </head>
@@ -44,7 +45,7 @@
   <div class="grain"></div>
   <nav class="nav" aria-label="Navigasi utama">
     <a class="mark" href="#top">FAZA<i>·</i>SADIKIN</a>
-    <div class="navlinks"><a href="#projects">Projects</a><a href="#about">About</a><a href="#cv">CV</a><a href="#practice">Practice</a></div>
+    <div class="navlinks"><a href="#single">Single</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#cv">CV</a><a href="#practice">Practice</a></div>
   </nav>
   <main id="top">
     <header class="hero">
@@ -52,6 +53,27 @@
       <div class="intro"><p>Gue Faza Sadikin—produser musik, pianis, dan kreator multimedia. Dari aransemen dan scoring sampai recording, mixing, mastering, dan konten audio-visual.</p><div class="chips"><span class="chip">Music Production</span><span class="chip">Piano</span><span class="chip">Scoring</span><span class="chip">Multimedia</span></div><div class="social-links"><a href="https://www.instagram.com/fazasp/" target="_blank" rel="noopener noreferrer">Instagram @fazasp ↗</a><a href="https://www.tiktok.com/@fazaaesp" target="_blank" rel="noopener noreferrer">TikTok @fazaaesp ↗</a></div></div>
     </header>
     <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Music Production <b>✦</b> Piano <b>✦</b> Scoring <b>✦</b> Composition <b>✦</b> Multimedia <b>✦</b></span><span>Music Production <b>✦</b> Piano <b>✦</b> Scoring <b>✦</b> Composition <b>✦</b> Multimedia <b>✦</b></span></div></div>
+
+    <section class="release" id="single">
+      <div class="release-layout reveal">
+        <div class="release-copy">
+          <div class="section-label">Featured release</div>
+          <h2>It’s<br><em>Only U</em></h2>
+          <p>Single original Fazasp. Dengarkan langsung lewat Spotify atau tonton official lyric video-nya di YouTube.</p>
+          <div class="release-meta"><span>Fazasp</span><span>Single</span><span>2025</span></div>
+        </div>
+        <div class="players">
+          <article class="player-card">
+            <div class="player-head"><strong>Official Lyric Video</strong><a href="https://www.youtube.com/watch?v=V7ljNZU0srs" target="_blank" rel="noopener noreferrer">Buka YouTube ↗</a></div>
+            <iframe class="video-frame" src="https://www.youtube-nocookie.com/embed/V7ljNZU0srs" title="It's Only U — Fazasp (Official Lyric Video)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </article>
+          <article class="player-card">
+            <div class="player-head"><strong>Listen on Spotify</strong><a href="https://open.spotify.com/track/0cl4ZrUxyVMIwHzwRoxcV0" target="_blank" rel="noopener noreferrer">Buka Spotify ↗</a></div>
+            <iframe class="spotify-frame" src="https://open.spotify.com/embed/track/0cl4ZrUxyVMIwHzwRoxcV0?utm_source=generator" title="It's Only U — Fazasp on Spotify" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <section id="projects">
       <div class="section-head reveal"><div class="section-label">Selected work</div><div><h2>Projects that carry a sound.</h2><p>Kumpulan karya scoring, komposisi, materi belajar piano, dan proyek teknologi musik. Riset sampel audio degung dan VR menjadi bagian dari eksplorasi gue di bidang audio.</p></div></div>
